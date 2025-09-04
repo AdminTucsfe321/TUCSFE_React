@@ -1,0 +1,24 @@
+project_id: "tucsfe-ai-integration-project"
+region: "us-central1"
+model: "gemini-2.5-pro"
+rag_enabled: true
+kb_path: data/knowledge_base/
+
+allowed_emails:
+  - your_email@gmail.com
+  - p.elangoeee1995@gmail.com
+
+admin_emails:
+  - p.elangoeee1995@gmail.com
+
+embeddings:
+  provider: auto         # auto | vertex | huggingface
+  vertex:
+    project_id: "tucsfe-ai-integration-project"       # e.g. tucsfe-ai-integration-project
+    location: us-central1
+    model: textembedding-gecko@latest
+  huggingface:
+    model_name: sentence-transformers/all-MiniLM-L6-v2
+
+vector_store:
+  path: faiss_index

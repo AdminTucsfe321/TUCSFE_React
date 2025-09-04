@@ -1,0 +1,18 @@
+fastapi>=0.95.2
+uvicorn[standard]>=0.22.0
+python-dotenv>=1.0.0
+pymongo>=4.4.0
+passlib[bcrypt]>=1.7.4
+requests>=2.31.0
+python-multipart>=0.0.6
+pytest>=7.4.0
+typing-extensions>=4.5.0
+
+# Optional / RAG & Vertex AI dependencies (install as needed)
+# google-cloud-aiplatform>=1.30.0
+# google-generative-ai>=0.2.0
+# vertexai  # if your pipeline requires the 'vertexai' SDK
+# sentence-transformers>=2.2.2
+# numpy>=1.25.0
+# scikit-learn>=1.2.0
+# faiss-cpu  # Linux-only binary,
